@@ -8,6 +8,9 @@ import { fileURLToPath } from "url";
 import mongoose from "mongoose";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+import cors from "cors";
+app.use(cors());
+
 dotenv.config();
 
 const fsPromises = fs.promises;
